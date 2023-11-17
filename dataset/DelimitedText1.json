@@ -1,0 +1,28 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Target",
+				"fileSystem": "optis-samp-work"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "DriverID;\"date\";\"hard_acceleration\";\"very_hard_acceleration\";\"extreme_acceleration\";\"hard_braking\";\"very_hard_braking\";\"extreme_braking\";\"turns_made_per_day\";\"hard_acc_cornering\";\"hard_brak_cornering\";\"speedMedian\";\"speedMax\";\"speedSD\";\"total_driving_hours\";\"total_night_hours\";\"DriverScore\";\"CompanyID\";\"moderate_events_time\";\"harsh_events_time\"",
+				"type": "String"
+			}
+		]
+	}
+}
