@@ -1,0 +1,9 @@
+{
+	"name": "optis-jave-adf",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6d1aa8d6-0447-4652-b49e-b87c8b2aac7f",
+		"tenantId": "094d25ba-3306-4bc2-b789-6eb55f87b309"
+	}
+}

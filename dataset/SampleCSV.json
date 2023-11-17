@@ -1,0 +1,52 @@
+{
+	"name": "SampleCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"folderPath": "Users/javeedhussain.j/Downloads/Azure"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "EMPLOYEE_ID",
+				"type": "String"
+			},
+			{
+				"name": "EMPLOYEE_NAME",
+				"type": "String"
+			},
+			{
+				"name": "CITY",
+				"type": "String"
+			},
+			{
+				"name": "PREVIOUS_COMPANY",
+				"type": "String"
+			},
+			{
+				"name": "DESIGNATION",
+				"type": "String"
+			},
+			{
+				"name": "EMPLOYEE_REFERENCE_NUMBER",
+				"type": "String"
+			},
+			{
+				"name": "JOINING_DATE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
